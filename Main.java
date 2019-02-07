@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println( "Введите строку ");
+        System.out.println( "Введите какую то строку ");
         String string = scanner.nextLine();
         String [] max = string.split(" ");
         ArrayList <String> strings = new ArrayList(Arrays.asList(max));
@@ -15,8 +15,10 @@ public class Main {
                    a = strings.get(i);
                    strings.set(i, strings.get(i-1));
                    strings.set(i-1,a);
+
                 }
             }
+
         }
         String  sum = "";
         for (int i =0; i<strings.size(); i++){
